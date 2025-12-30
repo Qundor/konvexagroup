@@ -130,7 +130,7 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url('background.jpeg') no-repeat center center/cover;
+  background: url('images/background.jpeg') no-repeat center center/cover;
   position: relative;
   color: #fff;
 }
@@ -355,4 +355,26 @@ footer .credits {
   .hero p {
     font-size: 1rem;
   }
+}
+/* Social media icon sizing */
+.social-links img {
+  transition: transform 0.3s ease;
+}
+
+/* WhatsApp stays larger */
+.social-links .icon-whatsapp {
+  width: 42px;
+  height: 42px;
+}
+
+/* Facebook & Instagram smaller */
+.social-links .icon-facebook,
+.social-links .icon-instagram {
+  width: 28px;
+  height: 28px;
+}
+
+/* Hover effect */
+.social-links a:hover img {
+  transform: scale(1.1);
 }
